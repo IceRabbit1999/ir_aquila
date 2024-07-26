@@ -1,0 +1,11 @@
+[package]
+name = "ir_aquila"
+version = "0.0.1"
+edition = "2021"
+readme = "README.md"
+description = "This crate is a personal utility library, not for public use(yet)"
+homepage = "https://github.com/IceRabbit1999/ir_aquila"
+repository = "https://github.com/IceRabbit1999/ir_aquila"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
