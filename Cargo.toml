@@ -9,7 +9,7 @@ repository = "https://github.com/IceRabbit1999/ir_aquila"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-macros = { path = "macros" }
+macros = { path = "./macros", version = "0.1.0" }
 
 [dev-dependencies]
 snafu = "0.8.4"
