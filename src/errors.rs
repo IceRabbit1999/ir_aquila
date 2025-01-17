@@ -15,15 +15,4 @@ pub trait StackError: std::error::Error {
         }
         result
     }
-
-    fn root_cause(&self) -> String
-    where
-        Self: Sized,
-    {
-        let last = self.last();
-        let msg = format!("{}", last);
-
-        // UNWRAP: Ok since we know the format of the error message string
-        msg.split("error:").last().unwrap().trim().to_string()
-    }
 }

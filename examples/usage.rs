@@ -4,11 +4,10 @@ use snafu::Snafu;
 fn main() {
     let e = Error::Foo { source: Internal::Bar { msg: "msg".to_string() } };
     println!("{:?}", e);
-    println!("{}", e.root_cause());
 }
 
 #[derive(Snafu)]
-#[stack_error]
+#[stack_error(path(crate::StackError))]
 enum Error {
     #[snafu(display("Foo"))]
     Foo {
@@ -17,7 +16,7 @@ enum Error {
 }
 
 #[derive(Snafu)]
-#[stack_error]
+#[stack_error(path(crate::StackError))]
 enum Internal {
     #[snafu(display("Bar, error: {}", msg))]
     Bar {

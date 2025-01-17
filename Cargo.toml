@@ -1,6 +1,6 @@
 [package]
 name = "ir_aquila"
-version = "0.0.2"
+version = "0.0.3"
 edition = "2021"
 readme = "README.md"
 description = "This crate is a personal utility library, not for public use(yet)"
@@ -9,7 +9,7 @@ repository = "https://github.com/IceRabbit1999/ir_aquila"
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-ir_arcane = "0.0.2"
+ir_arcane = "0.0.3"
 
 [dev-dependencies]
 snafu = "0.8.4"
